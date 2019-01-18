@@ -9,8 +9,8 @@ client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'setg')) {
-    client.user.setGame(argresult);
+  if (message.content.startsWith(adminprefix + '.g')) {
+    client.user.سثفGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
      if (message.content === (adminprefix + "leave")) {
